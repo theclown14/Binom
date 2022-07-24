@@ -14,8 +14,51 @@
             <div class="search__content">
                 <h1 class="search__title">Поиск по новостройкам</h1>
                 <form action="" class="search__form">
-                    <button></button>
-                    <button></button>
+                    <div class="search__form__buttons__wrapper">
+                        <button class="search__form__button">Классический поиск</button>
+                        <button class="search__form__button">Умная строка</button>
+                    </div>
+                    <div class="search__form__wrapper">
+                        <div class="search__form__input__wrapper">
+                            <input type="text" class="search__form__input" placeholder="Район, мкрн, метро или ЖК">
+                            <span class="search__form__separator">   
+                            </span>
+                            <select name="" id="" class="search__form__select">
+                                <option value="" disabled selected class="search__form__option">
+                                    Класс ЖК
+                                </option>
+                                <option value=""></option>
+                            </select>
+                            <span class="search__form__separator">   
+                            </span>
+                            <select name="" id="" class="search__form__select">
+                                <option value="" disabled selected class="search__form__option">
+                                    Цена
+                                </option>
+                            </select>
+                            <span class="search__form__separator">   
+                            </span>
+                            <select name="" id="" class="search__form__select">
+                                <option value="" disabled selected class="search__form__option">
+                                    Комнат
+                                </option>
+                            </select>
+                            <span class="search__form__separator">   
+                            </span>
+                            <select name="" id="" class="search__form__select">
+                                <option value="" disabled selected class="search__form__option">
+                                    Срок сдачи
+                                </option>
+                            </select>
+
+                        </div>
+                        <div class="search__form__settings__wrapper">
+                            <button class="search__form__setting">
+                                <img src="img/search-filter.svg" alt="" class="search__form__setting__img">
+                            </button>
+                            <button class="search__form__find__button">Найти</button>
+                        </div>
+                    </div>
                 </form>
             </div>
         </div>
@@ -27,120 +70,124 @@
                     Полезные ссылки
                 </h1>
                 <ul class="links__cards">
-                    <li class="links__card card_new-home_list">
-                        <div class="links__card__wrapper">
-                            <a href="#" class="links__card__link">
-                                <h2 class="links__card__title">Подборки новостроек</h2>
-                            </a>
-                            <ul class="links__card__list">
-                               <a href="#" class="links__card__item__link">
-                                    <li class="links__card__item">Рядом с парком
-                                    <span class="links__card__item__number">17</span>
-                                </li>
-                               </a>
-                               <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Недалеко от метро
-                                    <span class="links__card__item__number">26</span>
-                                </li>
+                    <div class="links__cards__wrapper">
+                        <li class="links__card card_new-home_list">
+                            <div class="links__card__wrapper">
+                                <a href="#" class="links__card__link">
+                                    <h2 class="links__card__title">Подборки новостроек</h2>
                                 </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Близко к центру
-                                    <span class="links__card__item__number">11</span>
-                                </li>
+                                <ul class="links__card__list">
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Рядом с парком
+                                            <span class="links__card__item__number">17</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Недалеко от метро
+                                            <span class="links__card__item__number">26</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Близко к центру
+                                            <span class="links__card__item__number">11</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Рядом с рекой
+                                            <span class="links__card__item__number">21</span>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <img src="img/mom.svg" alt="" class="links__card__img">
+                        </li>
+                        <li class="links__card card_map">
+                            <div class="links__card__wrapper">
+                                <a href="#" class="links__card__link">
+                                    <h2 class="links__card__title">Новостройки на карте</h2>
                                 </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Рядом с рекой
-                                    <span class="links__card__item__number">21</span>
-                                </li>
+                                <p class="links__card__text">
+                                    Ищите новостройки рядом с парком, детским садом или работой
+                                </p>
+                                <a href="#" class="links__card__button">Искать на карте</a>
+                            </div>
+                            <img src="img/map.svg" alt="" class="links__card__img">
+                        </li>
+                    </div>
+                    <div class="links__cards__wrapper">
+                        <li class="links__card card_developers">
+                            <div class="links__card__wrapper">
+                                <a href="#" class="links__card__link">
+                                    <h2 class="links__card__title">Реестр застройщиков</h2>
                                 </a>
-                            </ul>
-                        </div>
-                        <img src="img/mom.svg" alt="" class="links__card__img">
-                    </li>
-                    <li class="links__card card_map">
-                        <div class="links__card__wrapper">
-                           <a href="#" class="links__card__link">
-                            <h2 class="links__card__title">Новостройки на карте</h2>
-                            </a>
-                            <p class="links__card__text">
-                                Ищите новостройки рядом с парком, детским садом или работой
-                            </p>
-                            <a href="#" class="links__card__button">Искать на карте</a>
-                        </div>
-                        <img src="img/map.svg" alt="" class="links__card__img">
-                    </li>
-                    <li class="links__card card_developers">
-                        <div class="links__card__wrapper">
-                           <a href="#" class="links__card__link">
-                            <h2 class="links__card__title">Реестр застройщиков</h2>
-                            </a>
-                            <p class="links__card__text">
-                                Выберите жилье среди объектов надежных застройщиков
-                            </p>
-                            <a href="#" class="links__card__button">Смотреть реестр</a>
-                        </div>
-                        <img src="img/builder.svg" alt="" class="links__card__img">
-                    </li>
-                    <li class="links__card card_under-construction_list">
-                        <div class="links__card__wrapper">
-                           <a href="#" class="links__card__link">
-                            <h2 class="links__card__title">Строящиеся ЖК</h2>
-                            </a>
-                            <ul class="links__card__list">
-                               <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Сдача в этом году
-                                    <span class="links__card__item__number">12</span>
-                                </li>
+                                <p class="links__card__text">
+                                    Выберите жилье среди объектов надежных застройщиков
+                                </p>
+                                <a href="#" class="links__card__button">Смотреть реестр</a>
+                            </div>
+                            <img src="img/builder.svg" alt="" class="links__card__img">
+                        </li>
+                        <li class="links__card card_under-construction_list">
+                            <div class="links__card__wrapper">
+                                <a href="#" class="links__card__link">
+                                    <h2 class="links__card__title">Строящиеся ЖК</h2>
                                 </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">до 2022 года
-                                    <span class="links__card__item__number">10</span>
-                                </li>
+                                <ul class="links__card__list">
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Сдача в этом году
+                                            <span class="links__card__item__number">12</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">до 2022 года
+                                            <span class="links__card__item__number">10</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">до 2023 года
+                                            <span class="links__card__item__number">17</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">до 2024 года
+                                            <span class="links__card__item__number">5</span>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <img src="img/construction.svg" alt="" class="links__card__img">
+                        </li>
+                        <li class="links__card card_complited_list">
+                            <div class="links__card__wrapper">
+                                <a href="#" class="links__card__link">
+                                    <h2 class="links__card__title">Сданные ЖК</h2>
                                 </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">до 2023 года
-                                    <span class="links__card__item__number">17</span>
-                                </li>
-                                </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">до 2024 года
-                                    <span class="links__card__item__number">5</span>
-                                </li>
-                                </a>
-                            </ul>
-                        </div>
-                        <img src="img/construction.svg" alt="" class="links__card__img">
-                    </li>
-                    <li class="links__card card_complited_list">
-                        <div class="links__card__wrapper">
-                           <a href="#" class="links__card__link">
-                            <h2 class="links__card__title">Сданные ЖК</h2>
-                            </a>
-                            <ul class="links__card__list">
-                               <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Эконом
-                                    <span class="links__card__item__number">22</span>
-                                </li>
-                                </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Комфорт
-                                    <span class="links__card__item__number">14</span>
-                                </li>
-                                </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Бизнес
-                                    <span class="links__card__item__number">5</span>
-                                </li>
-                                </a>
-                                <a href="#" class="links__card__item__link">
-                                <li class="links__card__item">Элит
-                                    <span class="links__card__item__number">9</span>
-                                </li>
-                                </a>
-                            </ul>
-                        </div>
-                        <img src="img/complited.svg" alt="" class="links__card__img">
-                    </li>
+                                <ul class="links__card__list">
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Эконом
+                                            <span class="links__card__item__number">22</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Комфорт
+                                            <span class="links__card__item__number">14</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Бизнес
+                                            <span class="links__card__item__number">5</span>
+                                        </li>
+                                    </a>
+                                    <a href="#" class="links__card__item__link">
+                                        <li class="links__card__item">Элит
+                                            <span class="links__card__item__number">9</span>
+                                        </li>
+                                    </a>
+                                </ul>
+                            </div>
+                            <img src="img/complited.svg" alt="" class="links__card__img">
+                        </li>
+                    </div>
                 </ul>
             </div>
         </div>
@@ -152,12 +199,18 @@
                     Популярные ЖК в Новосибирске
                 </h1>
                 <div class="popular__arrows">
-                    <button></button>
-                    <button></button>
+                    <button class="popular__arrows__button">
+                        <img src="img/arrow.svg" alt="" class="popular__arrows__button__img arrow__left">
+                    </button>
+                    <button class="popular__arrows__button">
+                        <img src="img/arrow.svg" alt="" class="popular__arrows__button__img">
+                    </button>
                 </div>
             </div>
             <ul class="popular__cards">
-                <li class="popular__card">
+               
+                    <li class="popular__card">
+                    <a href="#" class="popular__card__link">
                     <div class="card__top">
                         <img src="img/oasis.png" alt="" class="card__top__img">
                         <div class="card__top__wrapper">
@@ -177,7 +230,7 @@
                         </div>
                         <div class="card__bottom__info">
                             <p class="info__flat">Квартир: <span class="info__flat__num">324</span></p>
-                            <p class="info__flat__select">c 1k 2k 3k</p>
+                            <p class="info__flat__select">С 1К 2К 3К</p>
                         </div>
                         <div class="card__bottom__price">
                             <p class="price__square">от 29,3 м2</p>
@@ -185,8 +238,11 @@
                         </div>
                         <p class="card__bottom__caption">АКД-Мета</p>
                     </div>
+                    </a>
                 </li>
+               
                 <li class="popular__card">
+                   <a href="#" class="popular__card__link">
                     <div class="card__top">
                         <img src="img/civil.png" alt="" class="card__top__img">
                         <div class="card__top__wrapper">
@@ -200,8 +256,8 @@
                             <p class="address__area">Калининский р-н</p>
                         </div>
                         <div class="card__bottom__info">
-                            <p class="info__flat">Квартир:<span class="info__flat__num">102</span></p>
-                            <p class="info__flat__select">c 1k 2k 3k</p>
+                            <p class="info__flat">Квартир: <span class="info__flat__num">102</span></p>
+                            <p class="info__flat__select">С 1К 2К 3К</p>
                         </div>
                         <div class="card__bottom__price">
                             <p class="price__square">от 28,5 м2</p>
@@ -209,8 +265,10 @@
                         </div>
                         <p class="card__bottom__caption">СД Строй</p>
                     </div>
+                    </a>
                 </li>
                 <li class="popular__card">
+                   <a href="#" class="popular__card__link">
                     <div class="card__top">
                         <img src="img/nikitina.png" alt="" class="card__top__img">
                         <div class="card__top__wrapper">
@@ -228,8 +286,8 @@
                             </div>
                         </div>
                         <div class="card__bottom__info">
-                            <p class="info__flat">Квартир:<span class="info__flat__num">122</span></p>
-                            <p class="info__flat__select">c 1k 2k 3k</p>
+                            <p class="info__flat">Квартир: <span class="info__flat__num">122</span></p>
+                            <p class="info__flat__select">С 1К 2К 3К</p>
                         </div>
                         <div class="card__bottom__price">
                             <p class="price__square">от 31,5 м2</p>
@@ -237,8 +295,10 @@
                         </div>
                         <p class="card__bottom__caption">Брусника</p>
                     </div>
+                    </a>
                 </li>
                 <li class="popular__card">
+                   <a href="#" class="popular__card__link">
                     <div class="card__top">
                         <img src="img/europe.png" alt="" class="card__top__img">
                         <div class="card__top__wrapper">
@@ -261,8 +321,8 @@
 
                         </div>
                         <div class="card__bottom__info">
-                            <p class="info__flat">Квартир:<span class="info__flat__num">240</span></p>
-                            <p class="info__flat__select">c 1k 2k 3k</p>
+                            <p class="info__flat">Квартир: <span class="info__flat__num">240</span></p>
+                            <p class="info__flat__select">С 1К 2К 3К</p>
                         </div>
                         <div class="card__bottom__price">
                             <p class="price__square">от 31,5 м2</p>
@@ -270,6 +330,7 @@
                         </div>
                         <p class="card__bottom__caption">Сибакадемстрой</p>
                     </div>
+                    </a>
                 </li>
             </ul>
         </div>
